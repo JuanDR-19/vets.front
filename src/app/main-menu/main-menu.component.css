@@ -1,0 +1,88 @@
+.no-padding {
+    padding: 0;
+}
+#ir{
+    background-color: grey;
+    color: white;
+    border-color: grey;
+    width: 475px;
+    margin-top: 10%;
+}
+#ir:hover{
+    background-color: white;
+    color: grey;
+    border-color: white;
+}
+#cuadrocentro{
+    background-color: #dddddd;
+}
+#cuadrocentro{
+    opacity: 0; /* Inicialmente ocultamos el elemento */
+    animation: fade-in 2s forwards;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+#filler{
+    background-color: #dddddd;
+    animation: fade-in 2s forwards;
+}
+#img1{
+    opacity: 0; /* Inicialmente ocultamos el elemento */
+    animation: fade-in-right 2s forwards;
+}
+@keyframes fade-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+#img2{
+    opacity: 0; /* Inicialmente ocultamos el elemento */
+    animation: fade-in-left 2s forwards;
+}
+@keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(+10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+.typed{
+    overflow: hidden;
+    border-right: .15em solid black; 
+    margin: 0 auto; /* Gmuestra la manera en la que se acomodan los caracteres */
+    white-space: nowrap; 
+    animation: 
+    type 5s forwards steps(40, end),
+    parpadeo .75s infinite step-end forwards;
+}
+
+@keyframes type {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes parpadeo {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}

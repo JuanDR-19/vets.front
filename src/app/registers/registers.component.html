@@ -1,0 +1,25 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5" id="cuadrito">
+        <h1 class="text-center mb-4" id="titulo">Registro</h1>
+        <form class="form-container" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" formControlName="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre del local</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" formControlName="name_vet" required>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="address" name="address" formControlName="location" required>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary" id="reg">Registrarse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

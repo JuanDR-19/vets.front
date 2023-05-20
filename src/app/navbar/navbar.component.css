@@ -1,0 +1,36 @@
+nav {
+    background-color:#a7adba !important;
+  }  
+#searchBttn{
+    float: right;
+    margin-right: 1%;
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+#searchBttn:hover{
+    background-color: grey;
+    color: white;
+    border-color: grey;
+}
+#logBttn{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+#logBttn:hover{
+    background-color: grey;
+    color: white;
+    border-color: grey;
+}
+#searchTF{
+    float:left;
+    margin-right: 3%;
+    color: black;
+}
+
+
+  
+  
+  
+  

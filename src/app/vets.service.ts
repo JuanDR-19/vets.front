@@ -22,7 +22,7 @@ export class VetsService {
       location: location,
       email: email
     };
-    this.http.post<Vet[]>(`http://localhost:8081/new_vet`, newVet).subscribe(
+  this.http.post<Vet[]>(`http://localhost:8081/new_vet`, newVet).subscribe(
       response => {
         console.log(response);
         // Actualizar el estado de vetSubject

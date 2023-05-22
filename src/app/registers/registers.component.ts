@@ -19,8 +19,8 @@ export class RegistersComponent {
    * @type {FormBuilder}
    */
   checkoutForm = this.formBuilder.group({
-    name_vet: '',
     email: '',
+    name_vet: '',
     location: ''
   });
 
@@ -33,7 +33,7 @@ export class RegistersComponent {
     const locationParam: string = this.checkoutForm.value.location ?? '';
 
     // Envía una solicitud para agregar un veterinario al servidor
-    this.vetService.addVet(nameParam, emailParam, locationParam);
+    this.vetService.addVet(nameParam,locationParam, emailParam );
 
     this.checkoutForm.reset();
   }
